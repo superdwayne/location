@@ -30,7 +30,7 @@ const getLocation = () => {
     <div className="App">
       <button onClick={getLocation}>Get location</button>
       <h1>Coor</h1>
-        <p>Status</p>
+        <p>{status}</p>
         {lat && <p>latitude: {lat}</p>}
         {lng && <p>longitude: {lng}</p>}
     </div>
