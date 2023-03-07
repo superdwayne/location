@@ -8,7 +8,7 @@ title: planet Earth
 
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+
 
 export default function World(props) {
   const { nodes, materials } = useGLTF('/6fd2c9748b12401ca087ed805ebf579d.glb')

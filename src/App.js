@@ -1,12 +1,12 @@
 import React, { useState, Suspense } from "react"
 import { Canvas, useFrame, extend, } from '@react-three/fiber'
 import { VRButton, ARButton, XR, Controllers, Hands } from '@react-three/xr'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+
 import World from './object/world'
 import { useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-extend({ OrbitControls }); 
+
 
 const App = () => {
 
