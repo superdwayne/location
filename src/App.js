@@ -3,8 +3,7 @@ import { Canvas, useFrame, extend, } from '@react-three/fiber'
 import { VRButton, ARButton, XR, Controllers, Hands } from '@react-three/xr'
 
 import World from './object/world'
-import { useLoader } from '@react-three/fiber'
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
 
 
 
@@ -31,7 +30,7 @@ const getLocation = () => {
       );
       }
     
-      const gltf = useLoader(GLTFLoader, '/6fd2c9748b12401ca087ed805ebf579d.glb')
+
 
   return (<>
      <VRButton />
