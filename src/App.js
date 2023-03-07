@@ -1,5 +1,5 @@
 import React, { useState, Suspense } from "react"
-import { Canvas, useFrame, extend, } from '@react-three/fiber'
+import { Canvas } from '@react-three/fiber'
 import { VRButton, ARButton, XR, Controllers, Hands } from '@react-three/xr'
 
 import World from './object/world'
