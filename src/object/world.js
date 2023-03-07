@@ -7,13 +7,13 @@ title: planet Earth
 */
 
 import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-
+import { useGLTF, OrbitControls } from '@react-three/drei'
 
 export default function World(props) {
   const { nodes, materials } = useGLTF('/6fd2c9748b12401ca087ed805ebf579d.glb')
   return (
     <group {...props} dispose={null} scale="0.7">
+    <OrbitControls />
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials['Material.001']} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.planeta_terra} />
